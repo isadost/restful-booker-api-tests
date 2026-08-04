@@ -6,6 +6,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
@@ -51,6 +52,7 @@ class BookingApiTest {
     }
 
     @Test
+    @Tag("smoke")
     @DisplayName("GET /booking rezervasyon listesini başarıyla döndürmeli")
     void shouldGetBookingListSuccessfully() {
         given()
@@ -64,6 +66,7 @@ class BookingApiTest {
     }
 
     @Test
+    @Tag("crud")
     @DisplayName("POST ile oluşturulan rezervasyon GET ile okunabilmeli")
     void shouldCreateAndGetBookingSuccessfully() {
         int bookingId = createBooking();
@@ -82,6 +85,7 @@ class BookingApiTest {
     }
 
     @Test
+    @Tag("crud")
     @DisplayName("Rezervasyon oluşturma, güncelleme ve silme akışı çalışmalı")
     void shouldCompleteBookingLifecycleSuccessfully() {
         int bookingId = createBooking();
