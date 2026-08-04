@@ -62,12 +62,13 @@ REST Assured kodları **Given – When – Then** düzeniyle yazılmıştır:
 
 ## Proje Hakkında
 
-> Bu projede bir otel rezervasyon API'sini REST Assured ve JUnit ile test ettim.
-> GET ile listeleme ve kayıt okuma, POST ile yeni rezervasyon oluşturma, PUT ile
-> güncelleme ve DELETE ile silme senaryolarını otomatikleştirdim. Durum kodu,
-> JSON içerik türü ve cevap alanlarını doğruladım. Yetki gerektiren işlemler için
-> auth uç noktasından token alıp isteğe cookie olarak ekledim. Maven ile testleri
-> çalıştırdım ve GitHub Actions ile sürekli test akışı oluşturdum.
+Bu proje, bir otel rezervasyon sistemine ait REST API uçlarının otomatik olarak
+test edilmesini amaçlar. Rezervasyonların listelenmesi ve görüntülenmesi `GET`,
+yeni rezervasyon oluşturulması `POST`, mevcut kayıtların güncellenmesi `PUT`
+ve silinmesi `DELETE` senaryolarıyla kontrol edilir. Testlerde durum kodu, JSON
+içerik türü ve cevap alanları doğrulanır. Yetki gerektiren işlemler için kimlik
+doğrulama uç noktasından alınan token, isteklere cookie olarak eklenir. Testlerin
+çalıştırılması Maven ile, sürekli test süreci ise GitHub Actions ile yönetilir.
 
 ## Not
 
