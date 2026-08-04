@@ -47,6 +47,11 @@ src/test/java/io/github/isadost/
 - `BookingApiTest`: GET, POST, PUT ve DELETE testlerini içerir.
 - `.github/workflows/api-tests.yml`: Testleri GitHub Actions üzerinde otomatik çalıştırır.
 
+GitHub Actions üzerinde `smoke` etiketli salt-okunur GET testi çalıştırılır. `crud`
+etiketli POST, PUT ve DELETE testleri yerel ortamda `mvn clean test` komutuyla
+çalıştırılır. Herkese açık Restful Booker servisi bazı bulut/CI çıkışlarından gelen
+yazma isteklerine zaman zaman `418` döndürebildiği için bu ayrım CI sonucunu kararlı tutar.
+
 ## Test akışı
 
 REST Assured kodları **Given – When – Then** düzeniyle yazılmıştır:
