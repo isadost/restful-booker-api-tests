@@ -60,7 +60,7 @@ REST Assured kodları **Given – When – Then** düzeniyle yazılmıştır:
 - `when()` → HTTP isteğinin gönderilmesi
 - `then()` → Durum kodu, içerik türü ve cevap gövdesinin doğrulanması
 
-## Mülakatta kısa anlatım
+## Proje Hakkında
 
 > Bu projede bir otel rezervasyon API'sini REST Assured ve JUnit ile test ettim.
 > GET ile listeleme ve kayıt okuma, POST ile yeni rezervasyon oluşturma, PUT ile
